@@ -73,9 +73,6 @@ export default function Navbar() {
                     <a href="/activities" className="mobile-link" onClick={() => setIsMenuOpen(false)}>
                         Activities
                     </a>
-                    <a href="/gallery" className="mobile-link" onClick={() => setIsMenuOpen(false)}>
-                        Gallery
-                    </a>
                     <a href="/contact" className="mobile-link" onClick={() => setIsMenuOpen(false)}>
                         Contact
                     </a>
