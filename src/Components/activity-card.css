@@ -1,0 +1,183 @@
+.activity-card-link {
+  text-decoration: none;
+  display: block;
+}
+
+.activity-activity-card {
+  border-radius: 12px;
+  padding: 24px;
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid transparent;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  position: relative;
+  overflow: hidden;
+}
+
+.activity-activity-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.activity-activity-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.activity-activity-card:hover::before {
+  opacity: 1;
+}
+
+.blue-card {
+  background-color: rgba(59, 130, 246, 0.1);
+  border-color: rgba(59, 130, 246, 0.3);
+}
+
+.blue-card .card-title {
+  color: #3b82f6;
+}
+
+.red-card {
+  background-color: rgba(239, 68, 68, 0.1);
+  border-color: rgba(239, 68, 68, 0.3);
+}
+
+.red-card .card-title {
+  color: #ef4444;
+}
+
+.green-card {
+  background-color: rgba(34, 197, 94, 0.1);
+  border-color: rgba(34, 197, 94, 0.3);
+}
+
+.green-card .card-title {
+  color: #22c55e;
+}
+
+.purple-card {
+  background-color: rgba(168, 85, 247, 0.1);
+  border-color: rgba(168, 85, 247, 0.3);
+}
+
+.purple-card .card-title {
+  color: #a855f7;
+}
+
+.pink-card {
+  background-color: rgba(236, 72, 153, 0.1);
+  border-color: rgba(236, 72, 153, 0.3);
+}
+
+.pink-card .card-title {
+  color: #ec4899;
+}
+
+.orange-card {
+  background-color: rgba(249, 115, 22, 0.1);
+  border-color: rgba(249, 115, 22, 0.3);
+}
+
+.orange-card .card-title {
+  color: #f97316;
+}
+
+.indigo-card {
+  background-color: rgba(79, 70, 229, 0.1);
+  border-color: rgba(79, 70, 229, 0.3);
+}
+
+.indigo-card .card-title {
+  color: #4f46e5;
+}
+
+.activity-card-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.activity-card-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.activity-icon-image {
+  width: 24px;
+  height: 24px;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.activity-card-contents {
+  flex-grow: 1;
+}
+
+.activity-card-description {
+  color: #4b5563;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.activity-card-footer {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.activity-learn-more {
+  font-size: 14px;
+  font-weight: 500;
+  color: inherit;
+}
+
+.activity-arrow-icon {
+  width: 16px;
+  height: 16px;
+  margin-left: 8px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3Cpolyline points='12 5 19 12 12 19'%3E%3C/polyline%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: transform 0.3s ease;
+}
+
+.activity-activity-card:hover .arrow-icon {
+  transform: translateX(4px);
+}
+
+@media (max-width: 768px) {
+  .activity-activity-card {
+    padding: 20px;
+  }
+
+  .card-title {
+    font-size: 16px;
+  }
+
+  .activity-card-description {
+    font-size: 14px;
+  }
+}
